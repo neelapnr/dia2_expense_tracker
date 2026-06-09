@@ -222,3 +222,4 @@ venv/
 .env
 *.json
 __pycache__/
+*.jpg
