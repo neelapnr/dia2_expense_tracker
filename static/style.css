@@ -1,0 +1,76 @@
+body {
+
+    background: #111827;
+
+    color: white;
+
+    font-family: Arial;
+
+    padding: 40px;
+}
+
+.container {
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+input,
+button {
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    border: none;
+}
+
+button {
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#preview {
+
+    max-width: 100%;
+
+    margin-top: 20px;
+}
+
+.success {
+
+    background: green;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border-radius: 8px;
+}
+
+.error {
+
+    background: crimson;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border-radius: 8px;
+}

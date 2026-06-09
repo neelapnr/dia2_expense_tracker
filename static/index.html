@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Expense Tracker</h1>
+
+        <form
+            hx-post="/api/analyze"
+            hx-target="#result"
+            hx-swap="innerHTML"
+            hx-encoding="multipart/form-data"
+        >
+
+            <input
+                type="file"
+                name="file"
+                id="fileInput"
+                accept="image/*"
+                required
+            >
+
+            <img id="preview">
+
+            <button type="submit">
+                Analyser
+            </button>
+
+        </form>
+
+        <div id="result"></div>
+
+        <div id="confirmation"></div>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
