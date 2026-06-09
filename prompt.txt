@@ -1,0 +1,14 @@
+Analyse cette note de frais.
+
+Retourne STRICTEMENT un JSON avec cette structure :
+
+{
+  "type_document": "restaurant | transport | hotel | autre",
+  "fournisseur": "string",
+  "date": "JJ/MM/AAAA",
+  "montant_ttc": 0.0,
+  "tva": 0.0,
+  "devise": "EUR",
+  "description": "string",
+  "confiance": "haute | moyen | basse"
+}
